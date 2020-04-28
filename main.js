@@ -24,7 +24,7 @@ function setup() {
     createP("");
     createButton("Add random planet").mouseClicked(randomPlanet);
     createButton("Add random star").mouseClicked(randomStar);
-    frameRate(30);
+    frameRate(144);
 }
 
 function randomPlanet() {

@@ -34,7 +34,7 @@ class Planet{
                 this.velocityY+=ay;
                 //console.log(ax, ay);
             }
-        let time=1/30;
+        let time=1/144;
         this.position.x+=time*this.velocityX;
         if (this.position.x<0 || this.position.x>canvasSize.x){
             this.velocityX=-this.velocityX;
