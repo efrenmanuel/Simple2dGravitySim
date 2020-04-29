@@ -49,6 +49,8 @@ function randomStar() {
 function draw() {
 
     background(0);
+    //planetsCopy=[...planets]
+    
     for (let planet of planets) {
         planet.updatePos(planets);
         planet.show();

@@ -24,7 +24,8 @@ class Planet{
     updatePos(bodies){
         if (this.move){
         for (let body of bodies){
-            if (body!=this){
+            //console.log(Math.round(body.position.x),Math.round(this.position.x), Math.round(body.position.y),Math.round(this.position.y))
+            if (Math.abs(Math.round(body.position.x)-Math.round(this.position.x))>5 || Math.abs(Math.round(body.position.y)-Math.round(this.position.y))>5){
                 let acceleration=this.calculateAttraction(body);
                 let relativePos=createVector(body.position.x-this.position.x,body.position.y-this.position.y);
                 let angle=Math.atan2(relativePos.y,relativePos.x);
